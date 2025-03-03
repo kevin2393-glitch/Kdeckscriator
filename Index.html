@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale Deck Creator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="deck">
+        <div class="row">
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+            <div class="slot" onclick="adicionarRemoverBotao(this)">
+                <div class="placeholder"></div>
+            </div>
+        </div>
+    </div>
+    <div id="copyDeckButton" class="copy-button" style="display: none;">
+        <button onclick="copiarDeck()">Copiar Deck</button>
+    </div>
+    <div class="filtros">
+        <button onclick="filtrarCartas('ciclo')">Cartas de Ciclo</button>
+        <button onclick="filtrarCartas('feitico')">Feitiços</button>
+        <button onclick="filtrarCartas('condicao_vitoria')">Condições de Vitória</button>
+        <button onclick="filtrarCartas('suporte')">Cartas de Suporte</button>
+        <button onclick="filtrarCartas('todas')">Todas as Cartas</button>
+    </div>
+    <div id="cartas" class="cartas">
+        <!-- Cartas aparecerão aqui -->
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
